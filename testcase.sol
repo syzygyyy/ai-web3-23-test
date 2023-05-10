@@ -1,7 +1,7 @@
 pragma solidity 0.8.0;
 
 contract VulnerableToken{
-    uint256 public totalSupply;
+    uint256 public totalLiquidity;
     uint256 public balance;
     mapping(address => uint256) public balances;
 
@@ -16,7 +16,7 @@ contract VulnerableToken{
     }
 
     function getPrice() public view returns (uint256) {
-        uint256 price = 10000 / totalSupply;
+        uint256 price = 10000 / totalLiquidity;
         return price;
     }
 }
