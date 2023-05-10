@@ -17,7 +17,7 @@ contract VulnerableToken{
 
     function getPrice() public view returns (uint256) {
         uint256 price = 10000 / totalSupply;
-        return price
+        return price;
     }
 }
 
